@@ -30,14 +30,14 @@ function makeRandom() {
 
 function displayPics(){
   while(viewed.length < 6){
-    const rando = makeRandom();
+    let rando = makeRandom();
     while(!viewed.includes(rando)){
       viewed.push(rando);
     }
   }
   //console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
-  /* Var is a global variable and let is not a global variable so when we changed from var to let, the let in the rando function could not handle the let declaration */
+  /* let declares the variables block scoped so when we changed from var to let, it threw an error */
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
