@@ -37,7 +37,7 @@ function displayPics(){
   }
   //console.log(rando);
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the variable declaration from `var to `let`.
-  /* let declares the variables block scoped so when we changed from var to let, it threw an error */
+  /* rando was declared inside the function so it can't be used outside the function, therefore when we changed from var to let, it threw an error */
   console.log(viewed);
 
   for (let i = 0; i < 3; i++){
